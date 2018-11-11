@@ -1,0 +1,18 @@
+{
+  "name": "puppet-lamp",
+  "version": "1.0.0",
+  "author": "markolly",
+  "summary": "Manages configuration for a LAMP installation",
+  "license": "Apache-2.0",
+  "source": "https://github.com/markolly/puppet-lamp",
+  "project_page": "https://github.com/markolly/puppet-lamp",
+  "issues_url": "https://github.com/markolly/puppet-lamp",
+  "dependencies": [
+    { "name": "puppetlabs-stdlib", "version_requirement": ">= 1.0.0" },
+    { "name": "puppetlabs/mysql", "version_requirement": "7.0.0" },
+    { "name": "puppet/php", "version_requirement": "4.0.0" },
+    { "name": "puppetlabs/apache", "version_requirement": "1.11.1" },
+    { "name": "maestrodev-wget", "version_requirement": ">= 1.7.3" }
+  ],
+  "data_provider": null
+}
