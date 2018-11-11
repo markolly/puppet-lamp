@@ -1,5 +1,5 @@
 # Puppet Module: puppet-lamp
-Puppet module to manage configuration of LAMP Server.
+A Puppet module to manage configuration of LAMP Servers.
 
 ## Dependencies
 - puppetlabs-stdlib
