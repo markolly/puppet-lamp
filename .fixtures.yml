@@ -1,0 +1,17 @@
+fixtures:
+  repositories:
+    apache:
+      repo: https://github.com/puppetlabs/puppetlabs-apache.git
+      ref: '1.11.1'
+    apt: https://github.com/puppetlabs/puppetlabs-apt.git
+    archive: https://github.com/voxpupuli/puppet-archive.git
+    concat: https://github.com/puppetlabs/puppetlabs-concat.git
+    inifile: https://github.com/puppetlabs/puppetlabs-inifile.git
+    mysql:
+      repo: https://github.com/puppetlabs/puppetlabs-mysql.git
+      ref: '7.0.0'
+    php:
+      repo: https://github.com/voxpupuli/puppet-php.git
+      ref: 'v4.0.0'
+    stdlib: https://github.com/puppetlabs/puppetlabs-stdlib.git
+    wget: https://github.com/maestrodev/puppet-wget.git
