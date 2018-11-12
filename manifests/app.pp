@@ -45,8 +45,8 @@ class lamp::app {
   }
 
   class { 'php::globals':
-    php_version => '7.0',
-    config_root => '/etc/php/7.0',
+    php_version => '7.2',
+    config_root => '/etc/php/7.2',
   }
   ->class { 'php':
     ensure       => latest,
@@ -59,7 +59,6 @@ class lamp::app {
     extensions   => {
       mbstring => {},
       gd       => {},
-      xml      => {},
       curl     => {},
       json     => {},
       mysql    => {
@@ -81,7 +80,7 @@ class lamp::app {
       'Date/date.timezone'      => 'Europe/London',
     },
   }
-  ->file { '/etc/php/7.0/mods-available/mysql.ini':
+  ->file { '/etc/php/7.2/mods-available/mysql.ini':
     ensure  => 'present',
     replace => 'yes',
     content => '',

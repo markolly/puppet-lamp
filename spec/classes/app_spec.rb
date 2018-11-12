@@ -46,7 +46,6 @@ describe 'lamp::app' do
     should contain_class('php').with_extensions(
       'mbstring' => {},
       'gd' => {},
-      'xml' => {},
       'curl' => {},
       'json' => {},
       'mysql' => {
@@ -71,8 +70,8 @@ describe 'lamp::app' do
   it do
     should contain_class('php::globals')
       .with(
-        php_version: '7.0',
-        config_root: '/etc/php/7.0'
+        php_version: '7.2',
+        config_root: '/etc/php/7.2'
       )
   end
 
@@ -106,7 +105,7 @@ describe 'lamp::app' do
   end
 
   it do
-    should contain_file('/etc/php/7.0/mods-available/mysql.ini')
+    should contain_file('/etc/php/7.2/mods-available/mysql.ini')
       .with(
         ensure: 'present',
         replace: 'yes',
